@@ -3,29 +3,60 @@
 <head>
   <title>Questionário Simples</title>
   <style>
-    .nav-list{
-        padding: 0;
+    *{
         margin: 0;
-        display: flex;
-        justify-content: space-around;
-        list-style-type: none;
-        color: rgba(110, 14, 235, 0.664);
+        padding: 0;
         background-color: black;
-        height: 50px;
-        padding: 20px;
-        font-size: 20px;
+        color: rgba(116, 15, 247, 0.801);
     }
+
+    a{
+            color: rgba(116, 15, 247, 0.801);
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        a:hover{
+            opacity: 0.7;
+        }
+
+        .logo{
+            font-size: 24px;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+        }
+
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items:center;
+        }
+
+        .nav-list{
+            list-style-type: none;
+            display: flex;
+            font-size: 20px;
+            height: 50px;
+            padding: 20px;
+        }
+
+        .nav-list li{
+            letter-spacing: 3px;
+            margin-left: 32px;
+            padding: 20px;
+        }
   </style>
 </head>
 <body>
+    <nav>
+            <a class="logo" href="/">Games Squad</a>
             <ul class="nav-list">
-                <a class="logo">Games Squad</a>
                 <li><a href="games.html">Início</a></li>
                 <li><a href="jogo.html">Produtos</a></li>
                 <li><a href="historia.html">História</a></li>
                 <li><a href="equipe.html">Equipe</a></li>
                 <li><a href="questionario.html">Questionário</a></li>
-            </ul>
+        </nav>
   
     <form action="/enviar-respostas" method="post">
 
